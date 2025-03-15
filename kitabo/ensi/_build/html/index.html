@@ -381,9 +381,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -399,16 +397,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-use-raw-html-in-markdown"><strong>Solution: Use Raw HTML in Markdown</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation"><strong>Explanation:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-using-myst-extensions-less-flexible"><strong>Alternative: Using MyST Extensions (Less Flexible)</strong></a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -508,23 +496,6 @@ document.write(`
 </script>
 <p></p>
 <p></p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="_images/eco-green.png"><img alt="_images/eco-green.png" src="_images/eco-green.png" style="width: 20%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><em>This QR code directs to <strong>Eco-Green</strong>, a project dedicated to sustainable decision-making and data-driven environmental insights. Focused on integrating ecological principles with actionable strategies, Eco-Green provides users with a structured approach to assessing environmental impact, resource allocation, and long-term sustainability. By leveraging interactive tools and analytical frameworks, the platform bridges the gap between theoretical environmental science and practical implementation, ensuring that users can make informed, effective choices in fostering a greener future.</em></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>In JupyterBook (which supports Markdown and MyST), text wrapping around a figure (similar to Wikipedia’s layout) isn’t natively built-in but can be achieved using <strong>raw HTML and CSS</strong>.</p>
-<p>Here’s how you can modify your figure so that:</p>
-<ul class="simple">
-<li><p>The image occupies only part of the width.</p></li>
-<li><p>The text flows around it.</p></li>
-<li><p>Footnotes or the caption stay within the frame of the image.</p></li>
-</ul>
-<hr class="docutils" />
-<section id="solution-use-raw-html-in-markdown">
-<h2><strong>Solution: Use Raw HTML in Markdown</strong><a class="headerlink" href="#solution-use-raw-html-in-markdown" title="Permalink to this heading">#</a></h2>
-<p>Replace your current <code class="docutils literal notranslate"><span class="pre">{figure}</span></code> directive with the following <strong>HTML and CSS</strong> block:</p>
 <style>
 .float-right {
     float: right;
@@ -540,40 +511,26 @@ document.write(`
 </style>
 
 <div class="float-right">
-    <img src="figures/eco-green.png" alt="Eco-Green QR Code" width="100%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Symbiotic_relationships_diagram.svg" alt="Eco-Green QR Code" width="100%">
     <p><em>This QR code directs to <strong>Eco-Green</strong>, a project dedicated to sustainable decision-making and data-driven environmental insights.</em></p>
-</div></section>
-<section id="explanation">
-<h2><strong>Explanation:</strong><a class="headerlink" href="#explanation" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>The <code class="docutils literal notranslate"><span class="pre">float:</span> <span class="pre">right;</span></code> makes the image and caption sit to the right while allowing text to flow to the left.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">width:</span> <span class="pre">20%</span></code> ensures the image doesn’t take up the full width.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">margin-left:</span> <span class="pre">15px;</span></code> adds spacing between the image and text.</p></li>
-<li><p>The <strong>footnote-like caption</strong> is placed within the div so it stays inside the image frame.</p></li>
-<li><p>The <strong>border and background color</strong> give it a Wikipedia-style framed look.</p></li>
-</ol>
-<p>This approach works well with <strong>JupyterBook deployed on GitHub Pages</strong> since JupyterBook supports raw HTML and CSS.</p>
+</div><p>Symbiosis (Ancient Greek συμβίωσις symbíōsis: living with, companionship &lt; σύν sýn: together; and βίωσις bíōsis: living)[2] is any type of a close and long-term biological interaction, between two organisms of different species. The two organisms, termed symbionts, can be either in a mutualistic, a commensalistic, or a parasitic relationship.[3] In 1879, Heinrich Anton de Bary defined symbiosis as “the living together of unlike organisms”.</p>
+<p>The term is sometimes more exclusively used in a restricted, mutualistic sense, where both symbionts contribute to each other’s subsistence. This means that they each benefit each other in some way. [3]</p>
+<p>Symbiosis can be obligatory, which means that one, or both of the organisms depend on each other for survival, or facultative (optional), when they can also subsist independently.</p>
+<p>Symbiosis is also classified by physical attachment. Symbionts forming a single body live in conjunctive symbiosis, while all other arrangements are called disjunctive symbiosis.[4] When one organism lives on the surface of another, such as head lice on humans, it is called ectosymbiosis; when one partner lives inside the tissues of another, such as Symbiodinium within coral, it is termed endosymbiosis.[5][6]</p>
 <hr class="docutils" />
-</section>
-<section id="alternative-using-myst-extensions-less-flexible">
-<h2><strong>Alternative: Using MyST Extensions (Less Flexible)</strong><a class="headerlink" href="#alternative-using-myst-extensions-less-flexible" title="Permalink to this heading">#</a></h2>
-<p>If you prefer to stay within MyST syntax, you could try <strong>grid layout</strong> with <code class="docutils literal notranslate"><span class="pre">{grid}</span></code>:</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
 <p>gutter: 1</p>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-2</div>
-<p class="sd-card-text"><img alt="Eco-Green" src="_images/eco-green.png" />{width=”100%”}
+<p class="sd-card-text"><img alt="Eco-Green" src="_images/eco-green.png" />
 <em>This QR code directs to <strong>Eco-Green</strong>, a project dedicated to sustainable decision-making and data-driven environmental insights.</em></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<p>10
-Eco-Green provides users with a structured approach to assessing environmental impact, resource allocation, and long-term sustainability. By leveraging interactive tools and analytical frameworks, the platform bridges the gap between theoretical environmental science and practical implementation, ensuring that users can make informed, effective choices in fostering a greener future.</p>
+<p>Eco-Green provides users with a structured approach to assessing environmental impact, resource allocation, and long-term sustainability. By leveraging interactive tools and analytical frameworks, the platform bridges the gap between theoretical environmental science and practical implementation, ensuring that users can make informed, effective choices in fostering a greener future.</p>
 </div>
 </div>
 </div>
@@ -728,13 +685,12 @@ Eco-Green provides users with a structured approach to assessing environmental i
 <img alt="_images/b64c172c28a91b97151e84048115cbc8e0e2665cf87fdce3c99a547b3979cc2e.png" src="_images/b64c172c28a91b97151e84048115cbc8e0e2665cf87fdce3c99a547b3979cc2e.png" />
 </div>
 </div>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>Cosmology, Geology, Biology, Ecology, Relational, Teleology.</em> The ecosystem, in its full organic glory, is the <strong>Self</strong>, an intricate intelligence honed over millennia. The entrenched import system—synthetic fertilizers draped in the illusion of necessity, beautified with “our feathers”—is <strong>Non-Self</strong>, an invasive mimicry masquerading as salvation. The <strong>eye of the farmer</strong> has been conditioned—miscalibrated—to accept this <strong>negotiated identity</strong> as <em>good-for-Self</em>, a tragic misrecognition where the host willingly feeds the pathogen. What was once an expedient fix metastasizes into long-term subjugation, eroding agency, resilience, and the land itself. We must reframe this cycle as it truly is: <strong>a tragedy of misperception, a history of dependency, an epic of resistance, a drama of reckoning, and—ultimately—a comedy of errors awaiting its final correction.</strong></span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><em>Cosmology, Geology, Biology, Ecology, Relational, Teleology.</em> The ecosystem, in its full organic glory, is the <strong>Self</strong>, an intricate intelligence honed over millennia. The entrenched import system—synthetic fertilizers draped in the illusion of necessity, beautified with “our feathers”—is <strong>Non-Self</strong>, an invasive mimicry masquerading as salvation. The <strong>eye of the farmer</strong> has been conditioned—miscalibrated—to accept this <strong>negotiated identity</strong> as <em>good-for-Self</em>, a tragic misrecognition where the host willingly feeds the pathogen. What was once an expedient fix metastasizes into long-term subjugation, eroding agency, resilience, and the land itself. We must reframe this cycle as it truly is: <strong>a tragedy of misperception, a history of dependency, an epic of resistance, a drama of reckoning, and—ultimately—a comedy of errors awaiting its final correction.</strong></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -784,23 +740,6 @@ Eco-Green provides users with a structured approach to assessing environmental i
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-use-raw-html-in-markdown"><strong>Solution: Use Raw HTML in Markdown</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation"><strong>Explanation:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-using-myst-extensions-less-flexible"><strong>Alternative: Using MyST Extensions (Less Flexible)</strong></a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
