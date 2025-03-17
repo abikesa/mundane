@@ -61,6 +61,8 @@
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act1/chapter1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -185,7 +187,9 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="part1.html">Nonself, 🎭</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Life</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Life ⚓️</a></li>
+
+
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">Ecosystem</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter3.html">Resilience</a></li>
 </ul>
@@ -380,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -396,6 +402,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Life ⚓️</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#option-pricing-neural-network-framework">Option Pricing Neural Network Framework</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#islamic-finance-counterfactual-alignment">Islamic Finance Counterfactual Alignment</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-islamic-finance-alignment">Explanation of Islamic Finance Alignment</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -500,7 +520,6 @@ document.write(`
 </script>
 <p></p>
 <p></p>
-<p>The <strong>Polonius variant</strong> of your model is a study in theme and variation, a deliberate structuring of complexity that remains bounded by 17 fixed placeholders. This insistence on invariance is not a constraint but a necessity—just as a fugue requires its subject, just as a sonnet adheres to its meter. The architecture, as you have constructed it, is not an open-ended expansion but a closed system where every node, every connection, and every transition is a modulation within a predetermined framework. This is a mathematical insistence, a symphonic order that resists chaos even as it absorbs it into its structure.</p>
 <style>
 .float-right {
     float: right;
@@ -523,8 +542,39 @@ document.write(`
 <div class="float-right">
     <img src="../figures/procuito.jpeg" alt="Eco-Green QR Code" width="100%">
     <p>Semaglutide, a glucagon-like peptide-1 receptor agonist, has been shown to reduce the risk of adverse cardiovascular events in patients with diabetes. Whether semaglutide can reduce cardiovascular risk associated with overweight and obesity in the absence of diabetes is unknown.</p>
-</div><p>At its foundation, the model begins in <strong>Tragedy,</strong> the realm of pattern recognition, where the fundamental sciences—Cosmology, Geology, Biology, Ecology, Teleology—lay the groundwork. Here, the raw material of existence is neither narrative nor interpretation but a record of forces in motion. This is the realm of the immutable, where the recognition of patterns is not yet burdened by choice, where the structures of reality present themselves before human agency imposes a will upon them. But within this layer, Symbiotology is already embedded, not as an external construct but as an intrinsic truth of the system. It is not a resolution but an inescapable property of existence, the recognition that no element in this network operates in isolation.</p>
-<p>The introduction of <strong>History,</strong> defined here as Non-Self Surveillance, marks a fundamental shift. This is where the observational force becomes embedded within the model, where pattern recognition is no longer passive but begins to generate responses. Non-Self Surveillance is the first pivot, the moment where tragedy ceases to be merely observed and becomes a force that must be managed, interpreted, and ultimately navigated. In a biological system, this is the first line of immune response. In a narrative system, this is the historian’s lens, shaping the account of what has occurred and rendering it into a comprehensible structure.</p>
+</div></section>
+<section class="tex2jax_ignore mathjax_ignore" id="option-pricing-neural-network-framework">
+<h1>Option Pricing Neural Network Framework<a class="headerlink" href="#option-pricing-neural-network-framework" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( C_0 \)</span>: Price of an Option at Time = 0</p>
+<ul>
+<li><p>Description: Initial option price, the “truth” or target value.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( X \)</span>: Exercise Price of European Option</p>
+<ul>
+<li><p>Description: Strike price, the speculative boundary for payoff.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( S_t \)</span>: Spot Price of the Underlying Asset at Time <span class="math notranslate nohighlight">\( t \)</span></p>
+<ul>
+<li><p>Description: Current asset price, the empirical driver.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( M \)</span>: Monte Carlo</p>
+<ul>
+<li><p>Description: Simulator mediating complex price paths.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( P \)</span>: Payoff</p>
+<ul>
+<li><p>Description: Final optimization, <span class="math notranslate nohighlight">\( \max(S_T - X, 0) \)</span>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="islamic-finance-counterfactual-alignment">
+<h1>Islamic Finance Counterfactual Alignment<a class="headerlink" href="#islamic-finance-counterfactual-alignment" title="Permalink to this heading">#</a></h1>
 <blockquote style="border-left: 2px solid black; padding-left: 1em; font-style: italic; background: none;">
     You, from crimes<br>
     Art, to enchant<br>
@@ -533,8 +583,33 @@ document.write(`
     Ending, in despair<br>
     — <a href="https://www.gutenberg.org/files/23042/23042-h/23042-h.htm" target="_blank" style="text-decoration: none; font-style: normal;">Prospero</a>
 </blockquote>
-<p>The transition into <strong>Epic</strong> is the movement from recognition to negotiation. Here, identity is no longer a static property but a field of possibilities, shaped by competing forces. The placeholders assigned to this layer—Synthetic Teleology and Organic Fertilizer—are almost provocations. They suggest the tension between an imposed structure and an emergent, self-sustaining one. Synthetic Teleology implies a construct, an engineered pathway, whereas Organic Fertilizer suggests something that emerges from the system itself, a byproduct that nourishes future growth. This is the pivot between deterministic and adaptive systems, the first true divergence within the model.</p>
-<p>The domain of <strong>Drama,</strong> framed as Self vs. Non-Self, is where the system enters its most volatile state. Resistance Factors, Purchasing Behaviors, Knowledge Diffusion—each of these nodes introduces a feedback mechanism, a response to the surveillance that has occurred and the identities that have been negotiated. Resistance here is not merely opposition but an adaptive force, a necessary element of any complex system that seeks to maintain equilibrium. Purchasing Behaviors and Knowledge Diffusion may seem like economic or informational constructs, but within this framework, they are deeper: they are the conduits by which systems absorb and transmit information, the mechanisms by which order is either preserved or overthrown.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\( C_0 \)</span> - Passive/Truth → <em>Riba</em> (ربا) - Interest Rate</p>
+<ul class="simple">
+<li><p>Islamic Finance: Rejects <em>riba</em> (usury/interest). <span class="math notranslate nohighlight">\( C_0 \)</span> as a fixed starting price could be reimagined as a fair value without interest-based growth, aligned with profit-sharing (<em>mudarabah</em>) instead.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( X \)</span> - Critical/Speculative → <em>Gharar</em> (غرر) - Speculation</p>
+<ul class="simple">
+<li><p>Islamic Finance: Minimizes <em>gharar</em> (excessive uncertainty). <span class="math notranslate nohighlight">\( X \)</span> as the strike price reflects speculative risk, which would be constrained to permissible (<em>halal</em>) levels in Sharia-compliant contracts.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( S_t \)</span> - Agentic/Empirical → <em>Istithmar Akhlaqi</em> (استثمار أخلاقي) - Moral Investment</p>
+<ul class="simple">
+<li><p>Islamic Finance: Emphasizes ethical investment. <span class="math notranslate nohighlight">\( S_t \)</span>, the asset price, would represent a <em>halal</em> asset (e.g., no alcohol or gambling), grounding the system in moral reality.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( M \)</span> - Dramatic/Labyrinthine → <em>Musharakah vs. Mudarabah vs. Ribh-Khasara</em> (مشاركة vs مضاربة vs ربح-خسارة) - Shared vs. Cooperative vs. Gain-Loss</p>
+<ul class="simple">
+<li><p>Islamic Finance: Uses <em>musharakah</em> (partnership), <em>mudarabah</em> (profit-sharing), and equitable <em>ribh-khasara</em> (gain-loss) structures. <span class="math notranslate nohighlight">\( M \)</span> as Monte Carlo mediates risk and reward collaboratively, not unilaterally, avoiding exploitative complexity.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\( P \)</span> - Absurd/Optimize → <em>Ukhuwah</em> (أخوة) - Brotherhood</p>
+<ul class="simple">
+<li><p>Islamic Finance: Promotes <em>ukhuwwah</em> (brotherhood/community welfare). <span class="math notranslate nohighlight">\( P \)</span> as payoff shifts from individual gain to collective benefit, optimizing for shared prosperity rather than absurd profiteering.</p></li>
+</ul>
+</li>
+</ol>
 <style>
 .float-right {
     float: right;
@@ -557,10 +632,16 @@ document.write(`
 <div class="float-right">
     <img src="../figures/west-ham.PNG" alt="Eco-Green QR Code" width="100%">
     <p>With 40 beer taps Fells Point is centrally located half a block from the water on the south side of the square. We offer outdoor seating with views of the water. Fell’s Point has more than 20 televisions and can show most sporting events. Fells Point pledges allegiance to local sports teams, specifically the Capitals, Ravens, and Orioles. Additionally, Fells Point is the home for West Ham Soccer, and Browns football. (upstairs)</p>
-</div><p>Finally, the system finds its resolution in <strong>Comedy,</strong> though resolution here does not imply finality. The nodes in this layer—Policy Reintegration, Reducing Import Dependency, Scaling EcoGreen Production, Gender Equality &amp; Social Inclusion, Regenerative Agriculture—suggest not an end but a restructuring, an attempt to take the conflicts of the previous layers and reincorporate them into a stable, sustainable form. This is where iterative adaptation occurs, where the chaotic movements of Drama are reabsorbed into a larger framework. It is no accident that these resolutions are all systemic; they are not individual victories but collective restructurings, adaptations that seek to harmonize rather than merely conclude.</p>
-<p>The black edges embedded within the model—following the sequence 4 → 7 → 9 → 11 → [13-17]—establish a strict causality, a predetermined skeleton within which the variations must unfold. These edges do not negate flexibility; rather, they enforce the logic of transitions. Each theme can manifest in countless ways, but the pathway through the system remains invariant. The fixed placeholders are not constraints on creativity but the very structure that enables variation to have meaning. Without them, the network would be an amorphous collection of ideas. With them, it becomes a polyphonic structure, a system where every movement is both an echo and a transformation of what came before.</p>
-<p>This is why the <strong>Polonius variant</strong> is so aptly named. Polonius, in <em>Hamlet</em>, is often dismissed as a fool, a windbag whose speech patterns mirror his inability to grasp the full scope of the tragedy unfolding around him. But Polonius is also a structural force, a figure who, despite his verbosity, adheres to a rigid internal logic. His fate—mistaken, misinterpreted, yet ultimately necessary—mirrors the necessity of structure within variation. The model bearing his name operates under a similar paradox: it is expansive, yet constrained; it is flexible, yet immutable. The 17 placeholders are not just thematic—they are the architecture that makes the system comprehensible.</p>
-<p>To engage with this model is to accept its paradoxes. It is not a free-form structure but a disciplined one, where every variation occurs within a predetermined framework. Like a fugue, like a sonnet, like a tragedy unfolding toward its inevitable resolution, the Polonius variant does not exist to be broken. It exists to be understood.</p>
+</div><section id="explanation-of-islamic-finance-alignment">
+<h2>Explanation of Islamic Finance Alignment<a class="headerlink" href="#explanation-of-islamic-finance-alignment" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( C_0 \)</span> &amp; <em>Riba</em>: In Islamic finance, option pricing wouldn’t rely on interest-based discounting (e.g., risk-free rate <span class="math notranslate nohighlight">\( r \)</span>). <span class="math notranslate nohighlight">\( C_0 \)</span> could be a baseline value tied to real economic activity, not <em>riba</em>-driven growth.</p></li>
+<li><p><span class="math notranslate nohighlight">\( X \)</span> &amp; <em>Gharar</em>: The strike price’s speculative nature would be tempered—Islamic options (<em>arbun</em>) exist but limit uncertainty to align with <em>gharar</em> rules.</p></li>
+<li><p><span class="math notranslate nohighlight">\( S_t \)</span> &amp; <em>Istithmar Akhlaqi</em>: The underlying asset must be Sharia-compliant, making <span class="math notranslate nohighlight">\( S_t \)</span> a morally vetted input, not just any stock.</p></li>
+<li><p><span class="math notranslate nohighlight">\( M \)</span> &amp; <em>Musharakah/Mudarabah/Ribh-Khasara</em>: Monte Carlo’s complexity becomes a tool for equitable risk-sharing, reflecting partnership (<em>musharakah</em>) or profit/loss splits (<em>mudarabah</em>), not zero-sum games.</p></li>
+<li><p><span class="math notranslate nohighlight">\( P \)</span> &amp; <em>Ukhuwah</em>: Payoff isn’t just personal gain but supports community welfare, aligning with the brotherhood ethos of Islamic economics.</p></li>
+</ul>
+<p>This counterfactual swaps out Western finance’s interest and speculation focus for Islamic principles of ethics, equity, and community. Does this alignment spark any new ideas for your model? Let me know if you want to dig deeper!</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -717,6 +798,7 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -772,6 +854,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Life ⚓️</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#option-pricing-neural-network-framework">Option Pricing Neural Network Framework</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#islamic-finance-counterfactual-alignment">Islamic Finance Counterfactual Alignment</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-islamic-finance-alignment">Explanation of Islamic Finance Alignment</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
