@@ -686,6 +686,45 @@ Description: Strike price, the speculative boundary for payoff.&lt;/p&gt;
         — <a href="https://www.gutenberg.org/files/23042/23042-h/23042-h.htm" target="_blank">Prospero</a>
     </blockquote>
 </div>
+<p>from IPython.core.display import display, HTML, Javascript</p>
+<p>html_code = “””</p>
+<style>
+    .toggle-btn { cursor: pointer; font-weight: bold; color: blue; text-decoration: underline; }
+    .hidden { display: none; }
+</style>
+<p class="toggle-btn" onclick="toggleSection('framework')">[+] Option Pricing Neural Network Framework</p>
+<div id="framework" class="hidden">
+    <p><b>\( C_0 \)</b>: Price of an Option at Time = 0<br>
+    Description: Initial option price, the "truth" or target value.</p>
+    <p><b>\( X \)</b>: Exercise Price of European Option<br>
+    Description: Strike price, the speculative boundary for payoff.</p>
+</div>
+<p class="toggle-btn" onclick="toggleSection('islamic')">[+] Islamic Finance Counterfactual Alignment</p>
+<div id="islamic" class="hidden">
+    <blockquote style="border-left: 2px solid black; padding-left: 1em;">
+        You, from crimes<br>
+        Art, to enchant<br>
+        Relieved, by prayer<br>
+        Spirits, to enforce<br>
+        Ending, in despair<br>
+        — <a href="https://www.gutenberg.org/files/23042/23042-h/23042-h.htm" target="_blank">Prospero</a>
+    </blockquote>
+</div>
+<script>
+    function toggleSection(id) {
+        var section = document.getElementById(id);
+        var button = document.querySelector(`[onclick="toggleSection('${id}')"]`);
+        if (section.classList.contains("hidden")) {
+            section.classList.remove("hidden");
+            button.textContent = "[-] " + button.textContent.slice(3);
+        } else {
+            section.classList.add("hidden");
+            button.textContent = "[+] " + button.textContent.slice(3);
+        }
+    }
+</script>
+<p>“””</p>
+<p>display(HTML(html_code))</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
