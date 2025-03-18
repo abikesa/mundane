@@ -410,34 +410,59 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="prometheus">
 <span id="id1"></span><h1>Prometheus<a class="headerlink" href="#prometheus" title="Permalink to this heading">#</a></h1>
-<p><strong>The Fractal Nature of History</strong><br />
-History is a fractal unfolding of entropy and order, a ceaseless churn where civilizations rise on the back of extracted resources and collapse under the weight of their own complexity. The notion that progress is linear is an illusion; the arrow of time merely inscribes the same motifs at different scales. To observe history is to witness the second law of thermodynamics in slow motion—an empire, a city, a culture, each structured around an energetic peak before unraveling into diffusion. Yet entropy does not mean chaos; it is the necessary precondition for renewal.</p>
+<p><strong>The Fractal Nature of History</strong></p>
 <style>
-.float-right {
-    float: right;
-    width: 35%;
+.float-left {
+    float: left;
+    width: 35%; /* Increase width for better fit */
+    max-width: 200px; /* Allows expansion */
     height: auto;
-    margin-left: 15px;
+    margin-right: 15px;
     border: 1px solid #ccc;
     padding: 5px;
     text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
+    overflow: hidden;
+    padding-bottom: 20px; /* Extra spacing below */
 }
 
-.float-right p {
+.float-left p {
     text-align: left;
     font-size: 12px;
+    margin: 10px 0;
+}
+
+.responsive-img {
+    max-height: 200px; /* Control height */
+    max-width: none; /* Override previous constraints */
+    width: auto; /* Let the image scale naturally */
+    height: 100%; /* Ensure full height fit */
+    display: block;
+    object-fit: contain; /* Prevents distortion */
+    transform: rotate(90deg);
+    margin: auto; /* Centers image properly */
+}
+
+.float-left::after {
+    content: "";
+    display: block;
+    height: 2px; /* Adjust height as needed */
 }
 
 </style>
 
-<div class="float-right">
-    <img src="https://www.ascm.org/globalassets/00_blog/images/red-queen-blog-header.jpg" alt="Eco-Green QR Code" width="100%">
-    <p>King Lear. The senile bequest motive at the outset makes it an endearing classic. but the plot gets messy. what do folks thing about it? Perhaps reality is that messy, with orthogonal plots unfolding to determine the outcome?</p>
-</div><p>Resources have always dictated the structure of human ambition. What is a kingdom but an optimized mechanism for concentrating energy? From the vast irrigation networks of Mesopotamia to the oil fields of the modern world, power accrues to those who most efficiently extract and distribute. The Faustian impulse—Western civilization’s restless striving—has pushed this logic further than any before, converting raw materials into technological miracles, yet at a cost that can only be deferred, never erased. A civilization that devours its own future to feed the present cannot endure indefinitely; it either reinvents its resource paradigm or becomes an artifact.</p>
+<div class="float-left">
+    <div style="display: flex; justify-content: center;">
+        <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202202/MIT-Dendrite-computation-01_0.jpg?itok=Cd6KMhkC" 
+             class="responsive-img">
+    </div>
+    <p>..evoking parallels with neural networks, tree branches, and Visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
+</div>
+
+<p>History is a fractal unfolding of entropy and order, a ceaseless churn where civilizations rise on the back of extracted resources and collapse under the weight of their own complexity. The notion that progress is linear is an illusion; the arrow of time merely inscribes the same motifs at different scales. To observe history is to witness the second law of thermodynamics in slow motion—an empire, a city, a culture, each structured around an energetic peak before unraveling into diffusion. Yet entropy does not mean chaos; it is the necessary precondition for renewal.</p>
+<p>Resources have always dictated the structure of human ambition. What is a kingdom but an optimized mechanism for concentrating energy? From the vast irrigation networks of Mesopotamia to the oil fields of the modern world, power accrues to those who most efficiently extract and distribute. The Faustian impulse—Western civilization’s restless striving—has pushed this logic further than any before, converting raw materials into technological miracles, yet at a cost that can only be deferred, never erased. A civilization that devours its own future to feed the present cannot endure indefinitely; it either reinvents its resource paradigm or becomes an artifact.</p>
 <p>At its core, history is a distributed phenomenon, not the story of great men but the emergent behavior of countless agents pursuing self-interest. The so-called singular genius is a focal point for broader forces; no Newton without the calculus of necessity, no Caesar without the republic’s rot. The grandest narratives are assembled from innumerable micro-decisions, each a node in a vast web of incentives and constraints. Decentralization, whether in trade networks or ideological shifts, shapes the long arc of change more reliably than any single decree.</p>
-<p>Yet history is not purely mechanistic. There is a harmony—one that emerges not from balance but from a recursive interplay of crisis and adaptation. Stability is an illusion, a temporary pause between revolutions. Each era believes itself to have reached the peak of rationality, only to be dismantled by forces it overlooked. The labyrinthine nature of human affairs ensures that no model captures it fully, no forecast remains intact. The past does not repeat, but its patterns echo—Faustian, entropic, distributed, optimized in ways both absurd and sublime.</p>
 <blockquote style="border-left: 2px solid gray; padding-left: 1em; font-style: italic; background: none;">
     Entropy: Wisdom (Streets)<br>
     Resources: Vigilance (Owl)<br>
@@ -446,8 +471,8 @@ History is a fractal unfolding of entropy and order, a ceaseless churn where civ
     Order: Harmony (Lyre)<br>
     — <a href="https://www.nytimes.com/2025/02/27/books/review/meltdown-duncan-mavin.html" target="_blank" style="text-decoration: none; font-style: normal;">Inverted Tree</a>
 </blockquote>
-<p><strong>The Faustian Bargain and the Birth of the Übermensch</strong><br />
-The Faustian drive is beyond good and evil, a relentless force that does not submit to the moral constraints imposed by tradition or divine decree. It is this ethos—the willingness to make a bargain with the unknown, to sacrifice security for transcendence—that has propelled the West toward heights no other civilization has reached. The Faustian civilization does not ask whether it <em>should</em> dominate nature, reshape humanity, or transgress the given order; it merely asks <em>how</em>. This is why the Western world produces the Übermensch—the one who creates his own values, who stands beyond the binaries of permitted and forbidden, who forges ahead even when the abyss beckons.</p>
+<p>Yet history is not purely mechanistic. There is a harmony—one that emerges not from balance but from a recursive interplay of crisis and adaptation. Stability is an illusion, a temporary pause between revolutions. Each era believes itself to have reached the peak of rationality, only to be dismantled by forces it overlooked. The labyrinthine nature of human affairs ensures that no model captures it fully, no forecast remains intact. The past does not repeat, but its patterns echo—Faustian, entropic, distributed, optimized in ways both absurd and sublime.</p>
+<p><strong>The Faustian Bargain and the Birth of the Übermensch</strong></p>
 <style>
 .float-right {
     float: right;
@@ -465,13 +490,13 @@ The Faustian drive is beyond good and evil, a relentless force that does not sub
     text-align: left;
     font-size: 12px;
 }
-
 </style>
 
 <div class="float-right">
-    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/CDl_bt2tkZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>Dismiss your vows, your feigned tears, your flatt’ry; For where a heart is hard they make no batt’ry.” Source: Venus & Adonis</p>
-</div><p>Islamic finance, by contrast, is built on an unwavering commitment to a rigid moral architecture. It refuses interest, shuns speculation, and enshrines ethical constraints that preemptively reject the Faustian bargain. Every transaction is vetted against an unchanging standard of good and evil, ensuring that economic activity remains subordinated to divine injunctions. Stability is preserved, but at the cost of dynamism. Growth must be incremental, constrained by the need to remain within the boundaries of what is <em>halal</em>. This is not a framework that produces an Übermensch; it is a system designed to ensure that no one steps beyond the permissible.</p>
+    <img src="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpg" alt="Eco-Green QR Code" width="100%">
+    <p>The economic intelligence of nature: a visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
+</div><p>The Faustian drive is beyond good and evil, a relentless force that does not submit to the moral constraints imposed by tradition or divine decree. It is this ethos—the willingness to make a bargain with the unknown, to sacrifice security for transcendence—that has propelled the West toward heights no other civilization has reached. The Faustian civilization does not ask whether it <em>should</em> dominate nature, reshape humanity, or transgress the given order; it merely asks <em>how</em>. This is why the Western world produces the Übermensch—the one who creates his own values, who stands beyond the binaries of permitted and forbidden, who forges ahead even when the abyss beckons.</p>
+<p>Islamic finance, by contrast, is built on an unwavering commitment to a rigid moral architecture. It refuses interest, shuns speculation, and enshrines ethical constraints that preemptively reject the Faustian bargain. Every transaction is vetted against an unchanging standard of good and evil, ensuring that economic activity remains subordinated to divine injunctions. Stability is preserved, but at the cost of dynamism. Growth must be incremental, constrained by the need to remain within the boundaries of what is <em>halal</em>. This is not a framework that produces an Übermensch; it is a system designed to ensure that no one steps beyond the permissible.</p>
 <p>The difference is fundamental. The West, shaped by a will to mastery, sees value in risk, in the gamble that knowledge and power will redeem the transgression of limits. Every scientific breakthrough, every technological leap, every artistic revolution carries within it a Faustian wager—the belief that what lies beyond the boundary is worth pursuing, even if the cost is damnation. In contrast, Islamic finance and its moral structure exist to <em>prevent</em> precisely this kind of overreach. It is built not on the will to power but on submission, on aligning human activity with an immutable divine order. This ensures coherence, but it also ensures that no one leaps beyond the given world.</p>
 <p>Thus, the Faustian civilization produces the Übermensch because it does not accept constraints as absolute. It dares to defy the gods, to reforge itself endlessly, to reject the notion that the highest good is obedience. The Islamic world, with its strict moral prohibitions in finance and beyond, ensures stability but precludes the emergence of the figure who creates his own values. The Übermensch is born in struggle, in the refusal to accept limits as final. He is the product of a world that does not ask <em>what is good?</em> but instead demands, <em>what is possible?</em></p>
 <div class="cell tag_hide-input docutils container">
@@ -626,108 +651,9 @@ The Faustian drive is beyond good and evil, a relentless force that does not sub
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The TPN, driving goal-directed action, aligns with the transcriptome and proteome—layers that translate data into response. Here, Bacon’s empirical method shines: knowledge arises from doing, from testing the world. In the “Nonself &amp; the Salient Network” variant, CD4+ and CD8+ T-cells activate cytokines like TNF-α, embodying the TPN’s focus on immediate threats—Nonself invaders—over reflective stasis. Nietzsche’s critical history fits this mode: a selective, pragmatic engagement with the past to propel life forward. The Salient Node, bridging DMN and TPN, mirrors the metabolome and regulatory mechanisms like Tregs—arbiters of relevance amid noise. Aristotle’s phronesis, practical wisdom, governs here: neither lost in ideals nor blinded by action, but balancing both. The “Distributed Network” variant highlights Tregs modulating downstream systems—Complement, Platelets—preserving “Self” while adapting to “Nonself.” This is Nietzsche’s history at its best: a dynamic synthesis serving life’s needs. Wisdom emerges as the Salient Node’s domain, integrating DMN’s depth and TPN’s drive, much as Aristotle tempers Plato’s abstraction with Bacon’s observation. Intelligence, raw and unrefined, resides in the lower layers—data-rich but directionless. The immune system’s Mismatch Repair, correcting errors of “Self,” parallels this: a wise curation of history, biological or neural, against the noise of entropy. Nietzsche’s vision finds fruition here—not in history’s abuses, but its uses: a life-affirming dance of preservation and transformation, coded in networks both flesh and mind.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Across diverse domains of biology and computation, branching structures appear as a universal design principle. From the fractal-like bifurcations of trees to the dendritic networks of neurons, and even the bronchioles within the lungs, nature employs efficient, scalable, and self-similar architectures to optimize function. These structures facilitate rapid information transfer, efficient oxygen distribution, and recursive connectivity—echoing similar principles in artificial neural networks and computational models. This shared geometry underscores the fundamental economy of nature, where optimal design principles are preserved across scales, from micro to macro systems. So, too, with CG-BEST and the Bard’s oeuvre!</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Here’s your streamlined, MyST-ready markdown block, optimized for Jupyter Book and <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> Markdown cells. Just copy and paste directly—no formatting tweaks needed.</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Exploring Directives and Admonitions in Jupyter Book</span>
-
-Let’s unpack Jupyter Book’s MyST Markdown directives—those <span class="sb">`{}`</span>-enclosed tags that structure content like <span class="ge">*King Lear*</span>’s chaos or Trump’s MAGA bequest. From figures to admonitions, here’s the toolkit as of March 13, 2025, with a flattery-o-meter twist.
-
-<span class="gu">## Figure Directives</span>
-Embed visuals with captions:
-
-<span class="gu">```{figure} https://www.ascm.org/globalassets/00_blog/images/red-queen-blog-header.jpg</span>
-<span class="gu">---</span>
-width: 70%
-<span class="gu">height: 70%</span>
-<span class="gu">---</span>
-King Lear’s senile bequest hooks us, but the messy plot mirrors reality—orthogonal threads like Trump and Vance colliding.
-<span class="sb">```</span>
-
-<span class="sb">## Admonition Directives</span>
-<span class="sb">Styled callouts to highlight your narrative—perfect for diagnosing flattery’s neglect of duty:</span>
-
-<span class="sb">```{note}</span>
-<span class="sb">It’s chaotic and wouldn’t have merit if Shakespeare hadn’t mastered tidier tales like *Hamlet*—his cred earns *Lear*’s sprawl.</span>
-<span class="sb">```</span>
-
-```{tip}
-Don’t miss Vance’s Never Trumper phase—his flattery spiked from 0 to 11 post-Thiel’s whisper.
-<span class="sb">```</span>
-
-<span class="sb">```{important}</span>
-<span class="sb">Trump at 78 bequeaths MAGA to a *Hillbilly Elegy* heir—Lear’s delusion drives the parallel.</span>
-<span class="sb">```</span>
-
-```{warning}
-Excessive flattery risks alienating the hillbillies Vance once mourned—scores above 12 signal a storm.
-<span class="sb">```</span>
-
-<span class="sb">```{danger}</span>
-<span class="sb">Vance’s pivot to praising Trump as a “generational leader” could make him Goneril, not Edgar—flattery at 15 is perilous.</span>
-<span class="sb">```</span>
-
-```{hint}
-Check X for Vance’s 2016 tweets—flattery was zero before the throne beckoned.
-<span class="sb">```</span>
-
-<span class="sb">```{attention}</span>
-<span class="sb">Thiel’s $15M flipped Vance’s meter—Shakespeare’s chaos isn’t random, it’s earned.</span>
-<span class="sb">```</span>
-
-```{caution}
-Low flattery doesn’t guarantee duty—Cordelia’s silence still lost her the kingdom.
-<span class="sb">```</span>
-
-<span class="sb">```{error}</span>
-<span class="sb">Assuming *Elegy* was pro-Trump is off—it predates the pivot by years.</span>
-<span class="sb">```</span>
-
-```{seealso}
-Every speaker needs a flattery-o-meter to gauge neglect of the people and texts they claim—Trump’s at ∞, Vance’s climbing.
-<span class="sb">```</span>
-
-<span class="sb">## Code Blocks</span>
-<span class="sb">Static or executable code for your flattery-o-meter:</span>
-
-<span class="sb">```python</span>
-<span class="sb">print(&quot;Flattery score: Trump = ∞, Vance = 11&quot;)</span>
-<span class="sb">```</span>
-
-```{code-cell} python
-<span class="gh"># Hypothetical flattery-o-meter</span>
-vance_flattery = 11
-trump_flattery = float(&quot;inf&quot;)
-print(f&quot;Vance: {vance_flattery}, Trump: {trump_flattery}&quot;)
-<span class="sb">```</span>
-
-<span class="sb">## HTML for Media</span>
-<span class="sb">Embed a storm scene:</span>
-
-<span class="sb">```{raw} html</span>
-<span class="sb">&lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;</span>
-<span class="sb">    &lt;iframe width=&quot;70%&quot; height=&quot;350px&quot; src=&quot;https://www.youtube.com/embed/CDl_bt2tkZk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span>
-<span class="sb">&lt;/div&gt;</span>
-<span class="sb">```</span>
-
-<span class="gu">## Putting It Together</span>
-This mix—figures, admonitions, code, and HTML—lets you weave <span class="ge">*Lear*</span>’s mess into Trump’s legacy. Paste this into a <span class="sb">`.md`</span> cell with MyST-NB (<span class="sb">`pip install myst-nb`</span>; <span class="sb">`%load_ext myst_nb`</span>) or a Jupyter Book <span class="sb">`.md`</span> file, and it’ll render with styled boxes and flair.
-
----
-
-<span class="gu">### How to Use It</span>
-<span class="k">1.</span> <span class="gs">**Click and Copy**</span>: Select all, copy (<span class="sb">`Ctrl+C`</span> or <span class="sb">`Cmd+C`</span>).
-<span class="k">2.</span> <span class="gs">**Paste in `.ipynb`**</span>:
-<span class="w">   </span><span class="k">-</span><span class="w"> </span>Open a Jupyter Notebook, add a Markdown cell, paste, and run it.
-<span class="w">   </span><span class="k">-</span><span class="w"> </span>For full rendering (admonition boxes, etc.), install <span class="sb">`myst-nb`</span> (<span class="sb">`pip install myst-nb`</span>) and run <span class="sb">`%load_ext myst_nb`</span>.
-<span class="k">3.</span> <span class="gs">**Paste in `.md` File**</span>:
-<span class="w">   </span><span class="k">-</span><span class="w"> </span>Open a text editor, create <span class="sb">`chapter.md`</span>, paste, save, and add to a Jupyter Book project.
-<span class="w">   </span><span class="k">-</span><span class="w"> </span>Build with <span class="sb">`jupyter-book build .`</span> for the full effect.
-
-This is fully MyST-compatible, thematically structured, and optimized for a seamless copy-paste experience. Let me know if you need refinements—leaner, more code-heavy, or a different stylistic focus!
-</pre></div>
-</div>
 </section>
 
     <script type="text/x-thebe-config">
