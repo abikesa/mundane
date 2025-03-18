@@ -643,24 +643,34 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\( P \)</span> &amp; <em>Ukhuwah</em>: Payoff isn’t just personal gain but supports community welfare, aligning with the brotherhood ethos of Islamic economics.</p></li>
 </ul>
 <p>This counterfactual swaps out Western finance’s interest and speculation focus for Islamic principles of ethics, equity, and community. Does this alignment spark any new ideas for your model? Let me know if you want to dig deeper!</p>
-<script>
-function toggleSection(id) {
-    var section = document.getElementById(id);
-    var button = document.getElementById("btn-" + id);
-    if (section.style.display === "none") {
-        section.style.display = "block";
-        button.textContent = "[-]";
-    } else {
-        section.style.display = "none";
-        button.textContent = "[+]";
-    }
-}
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sections with LaTeX</title>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            var button = document.getElementById("btn-" + id);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+                button.textContent = "[-]";
+            } else {
+                section.style.display = "none";
+                button.textContent = "[+]";
+            }
+        }
+    </script>
+    <script type="text/javascript" async
+      src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
 <p><b><a href="javascript:void(0);" id="btn-framework" onclick="toggleSection('framework')">[+]</a> Option Pricing Neural Network Framework</b></p>
 <div id="framework" style="display:none;">
-    <p><b>$ C_0 $:</b> Price of an Option at Time = 0<br>
+    <p><b>\( C_0 \)</b>: Price of an Option at Time = 0<br>
     Description: Initial option price, the "truth" or target value.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;p&gt;&lt;b&gt;$ X $:&lt;/b&gt; Exercise Price of European Option&lt;br&gt;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;p&gt;&lt;b&gt;\( X \)&lt;/b&gt;: Exercise Price of European Option&lt;br&gt;
 Description: Strike price, the speculative boundary for payoff.&lt;/p&gt;
 </pre></div>
 </div>
