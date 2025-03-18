@@ -503,30 +503,36 @@ document.write(`
 <p></p>
 <p></p>
 <p><strong>Option Pricing Neural Network Framework</strong></p>
+<ul>
+<li><p><strong><span class="math notranslate nohighlight">\( C_0 \)</span>: Initial Option Price (Price of an Option at <span class="math notranslate nohighlight">\( t = 0 \)</span>)</strong></p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\( C_0 \)</span>: Price of an Option at Time = 0</p>
-<ul>
-<li><p>Description: Initial option price, the “truth” or target value.</p></li>
+<li><p><strong>Description</strong>: The initial price of the option represents the market’s consensus valuation at the inception of the contract. If one assumes a static financial model with perfect foresight, this price may be perceived as an absolute “truth”—an illusion of control akin to certain deterministic interpretations found in Islamic finance. However, if we acknowledge the inherent incompleteness of market information and the stochastic nature of asset movements, then <span class="math notranslate nohighlight">\( C_0 \)</span> is merely a provisional baseline rather than an immutable truth. Over time, as new information unfolds and market conditions evolve, the illusion of control dissipates, revealing the true nature of risk and uncertainty.</p></li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\( X \)</span>: Exercise Price of European Option</p>
-<ul>
-<li><p>Description: Strike price, the speculative boundary for payoff.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\( X \)</span>: Exercise Price (Strike Price of a European Option)</strong></p>
+<ul class="simple">
+<li><p><strong>Description</strong>: The strike price sets the speculative boundary for potential payoffs. It serves as a contractual threshold determining whether the option will yield a profit at expiration. If the final spot price <span class="math notranslate nohighlight">\( S_T \)</span> surpasses <span class="math notranslate nohighlight">\( X \)</span>, the option holder benefits from the intrinsic value; otherwise, the option expires worthless. Thus, <span class="math notranslate nohighlight">\( X \)</span> is a critical parameter in defining the risk-reward structure of an option contract.</p></li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\( S_t \)</span>: Spot Price of the Underlying Asset at Time <span class="math notranslate nohighlight">\( t \)</span></p>
-<ul>
-<li><p>Description: Current asset price, the empirical driver.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\( S_t \)</span>: Spot Price of the Underlying Asset at Time <span class="math notranslate nohighlight">\( t \)</span></strong></p>
+<ul class="simple">
+<li><p><strong>Description</strong>: The spot price represents the empirical market reality at a given moment. It reflects collective market sentiment, macroeconomic influences, and microstructural dynamics. As a stochastic variable, <span class="math notranslate nohighlight">\( S_t \)</span> evolves over time in response to fundamental and speculative forces, making it the primary driver of an option’s valuation.</p></li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\( M \)</span>: Monte Carlo</p>
-<ul>
-<li><p>Description: Simulator mediating complex price paths.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\( M \)</span>: Monte Carlo Simulation</strong></p>
+<ul class="simple">
+<li><p><strong>Description</strong>: Monte Carlo methods serve as a powerful computational tool for modeling the probabilistic evolution of asset prices. By simulating a multitude of possible price paths under specified assumptions (such as geometric Brownian motion), Monte Carlo analysis provides a more nuanced understanding of risk and expected payoffs, especially in cases where closed-form solutions are impractical. It acts as a bridge between theoretical modeling and practical financial forecasting.</p></li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\( P \)</span>: Payoff</p>
+<li><p><strong><span class="math notranslate nohighlight">\( P \)</span>: Payoff Function</strong></p>
 <ul>
-<li><p>Description: Final optimization, <span class="math notranslate nohighlight">\( \max(S_T - X, 0) \)</span>.</p></li>
+<li><p><strong>Description</strong>: The payoff function formalizes the final outcome of the option at expiration. For a European call option, the payoff is given by</p>
+<div class="math notranslate nohighlight">
+\[
+    P = \max(S_T - X, 0)
+    \]</div>
+<p>where <span class="math notranslate nohighlight">\( S_T \)</span> is the spot price at expiration. This function encapsulates the fundamental asymmetry of options: the potential for unlimited gains (if <span class="math notranslate nohighlight">\( S_T &gt; X \)</span>) versus the limited downside (if <span class="math notranslate nohighlight">\( S_T \leq X \)</span>, the loss is capped at the premium paid). The optimization goal for an option holder is to maximize expected payoff, which depends on both market movements and strategic hedging.</p>
+</li>
 </ul>
 </li>
 </ul>
